@@ -1,0 +1,23 @@
+{
+  "name": "jspdf-example",
+  "version": "0.0.1",
+  "description": "A simple example usage of JSPDF",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maerteijn/jspdf-example.git"
+  },
+  "author": "Martijn Jacobs",
+  "type": "module",
+  "license": "",
+  "scripts": {
+    "build": "esbuild --bundle src/main.js --outdir=public",
+    "dev": "npm run build -- --servedir=public",
+    "watch": "npm run build -- --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.16"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1"
+  }
+}
